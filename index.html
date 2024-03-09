@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container h1{
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 >JavaScript</h1>
+</div>
+
+<script>
+// CITY
+
+var city = prompt("Enter Your City Name")
+    if(city === "karachi"){
+        console.log('Welcome to the City of Light ');
+    }
+    else{
+        console.log('Welcome to  Our City '); 
+    }
+
+    // GENDER 
+
+var gender = prompt('Enter your gender')
+    if( gender === 'male'){
+        document.write("Good Morning Sir, Have a good day.")
+    } else if(gender == ""){
+        document.write("Good Morning , Have a good day.")
+    }
+    else{
+        document.write("Good Morning Ma`am, Have a good day.")
+    }
+ 
+//   ROAD SIGNAL
+
+var trafficSignal = prompt('Enter traffic signal')
+
+if(trafficSignal == "red"){
+    console.log('You must be stop');
+}
+else if (trafficSignal=="yellow"){
+    console.log('Ready to move');
+}
+else if (trafficSignal=="green"){
+    console.log('Move now');
+}
+else{
+    console.log("write your word in lower case");
+}
+
+// PETROL CASE
+
+var petrol = +prompt("your fuel in the  car (write in litre)")
+if(petrol < 0.25){
+    console.log('Please refill the fuel in your car');
+}
+else {
+    console.log('you have enogh fuel to reach the home ');
+}
+
+// // CONDIIONS 
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+//  var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+//  var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+// if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }
+//  if("car" < "cat"){
+// alert("car is smaller than cat");
+// }
+
+</script>
+</body>
+</html>
