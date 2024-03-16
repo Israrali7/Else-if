@@ -64,7 +64,7 @@ if(petrol < 0.25){
     console.log('Please refill the fuel in your car');
 }
 else {
-    console.log('you have enogh fuel to reach the home ');
+    console.log('you have enough fuel to reach the home ');
 }
 
 // // CONDIIONS 
@@ -105,6 +105,123 @@ else {
 //  if("car" < "cat"){
 // alert("car is smaller than cat");
 // }
+
+
+//  Result card 
+
+var subjectMarks1 = +prompt("Enter Your English Marks")
+var subjectMarks2 = +prompt("Enter Your Urdu Marks")
+var subjectMarks3 = +prompt("Enter Your Maths Marks")
+var total = +prompt("Enter Your total marks ")
+var obtained = subjectMarks1+ subjectMarks2+ subjectMarks3
+var percent = (obtained/ total )*100 
+if(percent >= 80){
+    console.log('GRADE A-One Excellent work ');
+} 
+else if(percent>=70){
+    console.log('GRADE A Good work ');
+}
+else if(percent>=60){
+    console.log('GRADE B You need to improve ');
+}
+else{
+    console.log('FAIL Sorry ');
+}
+
+console.log("TOTAL" ,total );
+console.log("MARKS OBTAINED" , obtained );
+console.log("PERCENTAGE" ,percent);
+
+// divisible
+
+var num = +prompt("Enter to Check the Division")
+if(num%3 == 0 ){
+    document.write("<br>",num ," number is divisible by 3")
+}
+else{
+    document.write("<br>",num ," number is not divisible by 3")
+}
+
+//  Even or odd 
+
+var numbers = +prompt("Check Even or Odd")
+if(numbers%2 == 0){
+    document.write("<br>",numbers ," is an Even Number")
+}else{
+    document.write("<br>",numbers ," is an odd Number")
+}
+
+// Temperature
+
+var Temp = +prompt("Today`s Temperature")
+if(Temp>40){
+    console.log("It is too hot outside");
+}
+else if(Temp>30){
+    console.log("Today`s Weather is Normal");
+}
+else if(Temp>20){
+    console.log("Today`s Weather is Cool");
+}
+else{
+    console.log("OMG! Today`s Weather is so Cool");
+}
+
+//  Little calculator 
+
+var a = +prompt("Enter the first Number")
+var b = +prompt("Enter the Second Number")
+var operation = prompt("Enter the operation ")
+
+if(operation == '+'){
+    console.log(a + b);
+}
+else if (operation == '-'){
+    console.log(a - b);
+}
+else if (operation == '*'){
+    console.log(a * b);
+}
+else if (operation == '/'){
+    console.log(a / b);
+}
+else if (operation == '%'){
+    console.log(a % b);
+}
+else{
+    console.log("The operation is not properly design we are working on this");
+}
+
+// Game 
+
+var secretNo = 7
+var yourSeceretNo = +prompt("Guess my secret No ranging 1 to 10 ")
+
+if(yourSeceretNo == secretNo){
+    alert("Bingo! Correct answer")
+}
+else if (yourSeceretNo == 6 || yourSeceretNo == 8){
+    alert("You are very very close to the correct answer ")
+}
+else{
+    alert("Try again")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 </body>
